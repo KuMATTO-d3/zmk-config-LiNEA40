@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -168,9 +168,9 @@
 
         CURSOR {
             bindings = <
-&trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                    &kp PAGE_UP    &kp LG(TAB)  &kp UP    &kp LS(LG(TAB))  &trans
+&trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                    &kp PAGE_UP    &kp LG(TAB)  &kp UP    &kp LS(LG(TAB))  &kp LG(UP_ARROW)
 &trans    &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                    &kp HOME       &kp LEFT     &kp DOWN  &kp RIGHT        &kp END
-&kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                    &kp PAGE_DOWN  &kp LA(TAB)  &trans    &kp LA(LS(TAB))  &trans
+&kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                    &kp PAGE_DOWN  &kp LA(TAB)  &trans    &kp LA(LS(TAB))  &kp LG(DOWN)
 &trans    &trans                  &trans        &trans                   &trans  &trans    &trans  &trans                      &trans    &trans           &trans
             >;
         };
